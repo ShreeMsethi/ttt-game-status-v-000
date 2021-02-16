@@ -115,11 +115,11 @@ end
   
 def winner(board)
   
-  winning_combo = won?(board) 
+  winning_trombo = won?(board) 
   
-  if winning_combo != false && winning_combo.all? {| i | board[i] == "X"}
+  if winning_trombo != false && winning_trombo.all? {| i | board[i] == "X"}
     "X" 
-  elsif winning_combo != false && winning_combo.all? {| i | board[i] == "O"}
+  elsif winning_trombo != false && winning_trombo.all? {| i | board[i] == "O"}
      "O"
   else
     nil
